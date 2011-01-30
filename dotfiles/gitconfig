@@ -1,0 +1,8 @@
+[user]
+	name = Stefan Duret
+	email = sduret@gmail.com
+[core]
+	editor = mate -w
+	quotepath = false
+	autocrlf = input
+	safecrlf = true
