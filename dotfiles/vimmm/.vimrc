@@ -1,1 +1,0 @@
-/Users/sduret/.vim/vimrc
