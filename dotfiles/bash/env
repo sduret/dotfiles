@@ -1,0 +1,18 @@
+# Set PATH, CDPATH, EDITOR, etc.
+
+## Editor
+export EDITOR='mate -w'  # OS-X SPECIFIC - TextMate, w is to wait for TextMate window to close
+
+#Path
+export PATH=.:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/php/bin:/usr/local/php/lib/php:$PATH"
+export PATH="/usr/local/narwhal/bin:$PATH"
+export PATH="$PATH:~/bin"
+
+export GREP_OPTIONS="--exclude=\.svn"
+
+# Homebrew's python
+if [ -d "/usr/local/Cellar/python/2.7.1/bin" ] ; then
+  PATH=/usr/local/Cellar/python/2.7.1/bin:${PATH}
+fi
