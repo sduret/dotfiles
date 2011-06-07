@@ -1,4 +1,14 @@
-this is my ~/bin directory
+Inspired by [the Advanced Command Line PeepCode screencast](https://peepcode.com/products/advanced-command-line).
 
-it contains a bunch of scripts (mostly from the peepcode advanced command line tutorial) and a directory containing my dotfiles
+To set things up:
 
+1. Move/rename this project's folder to `~/bin`
+2. `ln -s ~/bin/dotfiles/bash/bash_profile ~/.bash_profile`
+3. `ln -s ~/bin/dotfiles/bash/bashrc ~/.bashrc`
+4. `ln -s ~/bin/dotfiles/vim/vimrc ~/.vimrc`
+5. `ln -s ~/bin/dotfiles/vim/gvimrc ~/.gvimrc`
+6. `ln -s ~/bin/dotfiles/vim ~/.vim`
+7. Copy `git/gitconfig-example` to `git/gitconfig` and set it up how you like it.
+8. `ln -s ~/bin/dotfiles/gitconfig ~/.gitconfig`
+9. Copy `ssh/config-example` to `ssh/config` and set it up how you like it.
+10. `ln -s ~/bin/dotfiles/ssh/config ~/.ssh/config` (assuming you have an `~/.ssh` folder already)

@@ -5,4 +5,8 @@
 	editor = mate -w
 	quotepath = false
 	autocrlf = input
-	safecrlf = true
+	safecrlf = false
+	excludesfile = /Users/sduret/.gitignore
+[github]
+	user = sduret
+	token = 246e30244b9aff29ddd4cfe8bac951be
