@@ -3,8 +3,8 @@ Inspired by [the Advanced Command Line PeepCode screencast](https://peepcode.com
 To set things up:
 
 1. Move/rename this project's folder to `~/bin`
-2. `ln -s ~/bin/dotfiles/bash/bash_profile ~/.bash_profile`
-3. `ln -s ~/bin/dotfiles/bash/bashrc ~/.bashrc`
+2. `ln -s ~/bin/dotfiles/bash_profile ~/.bash_profile`
+3. `ln -s ~/bin/dotfiles/bashrc ~/.bashrc`
 4. `ln -s ~/bin/dotfiles/vim/vimrc ~/.vimrc`
 5. `ln -s ~/bin/dotfiles/vim/gvimrc ~/.gvimrc`
 6. `ln -s ~/bin/dotfiles/vim ~/.vim`
