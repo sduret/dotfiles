@@ -45,7 +45,12 @@ export LSCOLORS=gxfxcxdxbxegedabagacad # cyan directories
 
 # Update the command prompt to be <user>@<host>:<current_directory>(scm_branch) >
 # Note that the git branch is given a special color
-export PS1="\[$EGREEN\]\u@\h\[$NO_COLOR\]:\[$ECYAN\]\w \[$EBLACK\]\$(vcprompt)\[$NO_COLOR\]\$ "
+#PS1="\n\u@\h:\w \[$EBLACK\]\$(vcprompt)\[$NO_COLOR\] \n→ "
+if [ -f "$HOME/bin/vcprompt" ]; then
+	export PS1="\[$EGREEN\]\u@\h\[$NO_COLOR\]:\[$ECYAN\]\w \[$EBLACK\]\$(vcprompt)\[$NO_COLOR\]\$ "
+else
+	export PS1="\[$EGREEN\]\u@\h\[$NO_COLOR\]:\[$ECYAN\]\w \[$NO_COLOR\]\$ "
+fi
 
 # Set terminal window title
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*} ${PWD}"; echo -ne "\007"'

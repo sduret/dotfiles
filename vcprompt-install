@@ -7,7 +7,9 @@
 
 mkdir -p ~/src
 cd ~/src
-hg clone http://vc.gerg.ca/hg/vcprompt/
+hg clone http://hg.gerg.ca/vcprompt/
 cd vcprompt
+autoconf
+./configure
 make
 cp vcprompt ~/bin/vcprompt
