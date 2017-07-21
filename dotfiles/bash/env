@@ -18,5 +18,8 @@ if [ -d "/usr/local/Cellar/python/2.7.1/bin" ] ; then
   PATH=/usr/local/Cellar/python/2.7.1/bin:${PATH}
 fi
 
-# Load RVM function
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
+# initialize rbenv
+eval "$(rbenv init -)"
+
+# initalize kobot scripts
+eval "$(/Users/sduret/bin/kobot/bin/kobot init -)"
